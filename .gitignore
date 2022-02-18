@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -103,8 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
-=======
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
 /node_modules
@@ -127,4 +124,3 @@ dist
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
->>>>>>> e3804bd0950136c7489f34fc890ceda69f54e51b
