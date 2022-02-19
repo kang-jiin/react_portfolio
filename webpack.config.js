@@ -38,6 +38,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
+        exclude: /node_modules/,
         use: [
           {
             loader: 'style-loader'
@@ -49,6 +50,7 @@ module.exports = {
       },
       {
         test: /\.(png|PNG|jpg|gif|ttf|eot|svg|woff|woff2)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        exclude: /node_modules/,
         use: [
           {
             loader: 'file-loader'
@@ -68,11 +70,21 @@ module.exports = {
     }),
     new ForkTsCheckerWebpackPlugin()
   ],
+
+  devtool: 'inline-source-map',
+  devServer: {
+    host: 'localhost',
+    port: 3000,
+    open: true,
+    historyApiFallback: true
+  },
+
   resolve: {
     modules: [path.resolve(__dirname, './src'), 'node_modules'],
     extensions: ['.ts', '.tsx', '.js', '.json', '.css'],
     alias: {
       src: path.resolve(__dirname, './src'),
+      pages: path.resolve(__dirname, './src/pages'),
       components: path.resolve(__dirname, './src/components')
     }
   }
