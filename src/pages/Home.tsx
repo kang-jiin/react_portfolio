@@ -4,7 +4,7 @@ import MyNavbar from 'components/MyNavbar';
 import AboutMe from 'components/AboutMe';
 import Skills from 'components/Skills';
 
-function Home() {
+const Home = () => {
   return (
     <div>
       <MyNavbar />
@@ -12,6 +12,6 @@ function Home() {
       <Skills />
     </div>
   );
-}
+};
 
 export default Home;

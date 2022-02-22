@@ -1,7 +1,7 @@
 import React, { CSSProperties, useEffect, useState } from 'react';
 import { Button, Col, Container, Nav, Navbar, Row } from 'react-bootstrap';
 
-function AboutMe() {
+const AboutMe = () => {
   const [time, setTime] = useState<number>(0);
   const [text, setText] = useState<string>('');
   const [text1, setText1] = useState<string>(' ');
@@ -50,6 +50,6 @@ function AboutMe() {
       <hr />
     </Container>
   );
-}
+};
 
 export default React.memo(AboutMe);

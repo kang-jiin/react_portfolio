@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 
-function MyNavbar() {
+const MyNavbar = () => {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
@@ -28,6 +28,6 @@ function MyNavbar() {
       </Container>
     </Navbar>
   );
-}
+};
 
 export default React.memo(MyNavbar);
