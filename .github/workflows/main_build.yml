@@ -58,6 +58,4 @@ jobs:
         AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_KEY }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_ACCESS_KEY }}
       run: |
-        aws s3 sync ./build s3://new.kangjin.com
-    - name: Invalidate CloudFront Cache
-      run: aws cloudfront create-invalidation --distribution-id E8SH5J3A3GRD8 --paths "/*"
+        aws s3 sync ./build s3://new.kangjiin.com
