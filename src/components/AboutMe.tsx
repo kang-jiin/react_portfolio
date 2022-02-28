@@ -2,53 +2,67 @@ import React, { CSSProperties, useEffect, useState } from 'react';
 import { Button, Col, Container, Nav, Navbar, Row } from 'react-bootstrap';
 
 const AboutMe = () => {
-  const [time, setTime] = useState<number>(0);
-  const [text, setText] = useState<string>('');
-  const [text1, setText1] = useState<string>(' ');
-  const [text2, setText2] = useState<string>(' ');
+  const containerStyle: CSSProperties = {
+    height: '100vh',
+    backgroundColor: '#EEEEEE'
+  };
 
-  const finalText: string = `WEB DEVELOPER
-  Knag Ji In
-  Web Portfolio`;
-  const finalText1: string = 'WEB DEVELOPER';
-  const finalText2: string = 'PORTFOLIO😘';
+  const textHeaderStyle: CSSProperties = {
+    color: '#000000'
+  };
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      if (time < finalText1.length) {
-        setText1(text1 + finalText1[time]);
-        setTime(time + 1);
-      } else if (time < finalText1.length + finalText2.length) {
-        setText2(text2 + finalText2[time - finalText1.length]);
-        setTime(time + 1);
-      } else {
-        clearTimeout(timer);
-      }
-    }, 150);
-
-    return () => clearTimeout(timer);
-  }, [time]);
-
-  const textStyle: CSSProperties = {
-    height: '300px'
+  const textBodyStyle: CSSProperties = {
+    color: '#6c757d'
   };
 
   return (
-    <Container className="py-5" id="aboutme">
-      <div style={textStyle} className="text-center">
-        <h1 className="">{text1}</h1>
-        <h1 className="">{text2}</h1>
-      </div>
-      <Row>
-        <Col></Col>
-        <Col className="text-end">
-          <h4>😀Kang Ji In</h4>
-          <h4>email</h4>
-          <h4>github</h4>
-        </Col>
-      </Row>
-      <hr />
-    </Container>
+    <section style={containerStyle}>
+      <Container id="aboutme" className="h-100">
+        <div className="text-center d-flex h-25">
+          <h1 className="align-self-center w-100">저를 소개합니다</h1>
+        </div>
+        <div className="h-75 w-100">
+          <Row className="m-4 w-100">
+            <h2 style={textHeaderStyle}>주니어 웹 개발자</h2>
+            <h5 style={textBodyStyle}>
+              React, Node.js, MySQL, AWS 를 이용한 웹 서비스를 설계/개발/운영한
+              경험이 있어요
+            </h5>
+          </Row>
+          <Row className="m-4 w-100">
+            <Col>
+              <h2 style={textHeaderStyle}>계획적인 개발</h2>
+              <h5 style={textBodyStyle}>
+                늘 개발 일정을 계획하고 사이드 이펙트를 고려해 기능을 설계하는
+                등 빠른 개발 보다는 계획적인 개발을 좋아해요🙋‍♀️
+              </h5>
+            </Col>
+            <Col>
+              <h2 style={textHeaderStyle}>통일된 코드</h2>
+              <h5 style={textBodyStyle}>
+                팀의 코딩 스타일 규칙을 정하고 리팩토링을 진행한 경험이 있어요
+              </h5>
+            </Col>
+          </Row>
+          <Row className="m-4 w-100">
+            <Col>
+              <h2 style={textHeaderStyle}>맞춰가는 동료</h2>
+              <h5 style={textBodyStyle}>
+                정형화된 규칙이 없더라도 팀원들의 코드를 분석해 코딩 스타일을
+                맞추기 위해 노력해요
+              </h5>
+            </Col>
+            <Col>
+              <h2 style={textHeaderStyle}>함께 성장하는 동료</h2>
+              <h5 style={textBodyStyle}>
+                함께 공부하고 토이프로젝트 하는 것을 좋아해요 꾸준히 성장하는
+                개발자가 되고 싶어요
+              </h5>
+            </Col>
+          </Row>
+        </div>
+      </Container>
+    </section>
   );
 };
 
