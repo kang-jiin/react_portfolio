@@ -9,13 +9,13 @@ const componentStyle: CSSProperties = {
 const Skills = () => {
   const [mix, setMix] = useState(Math.random() * 100);
 
-  useEffect(() => {
-    const skillTimer = setTimeout(() => {
-      setMix(Math.random() * 100);
-    }, 8000);
+  // useEffect(() => {
+  //   const skillTimer = setTimeout(() => {
+  //     setMix(Math.random() * 100);
+  //   }, 8000);
 
-    return () => clearTimeout(skillTimer);
-  }, [mix]);
+  //   return () => clearTimeout(skillTimer);
+  // }, [mix]);
 
   const options: any = {
     fontFamily: 'impact',

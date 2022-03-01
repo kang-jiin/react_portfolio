@@ -4,6 +4,7 @@ import MyNavbar from 'components/MyNavbar';
 import Summary from 'components/Summary';
 import AboutMe from 'components/AboutMe';
 import Skills from 'components/Skills';
+import Career from 'components/Career';
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Summary />
       <AboutMe />
       <Skills />
+      <Career />
     </div>
   );
 };
