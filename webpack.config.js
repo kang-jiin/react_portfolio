@@ -53,13 +53,12 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|PNG|jpg|gif|ttf|eot|svg|woff|woff2)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        test: /\.(PNG|png|jpg|woff|woff2|eot|ttf|svg|gif|otf)$/,
         exclude: /node_modules/,
-        use: [
-          {
-            loader: 'file-loader'
-          }
-        ]
+        loader: 'file-loader',
+        options: {
+          name: 'img/[name].[ext]'
+        }
       }
     ]
   },

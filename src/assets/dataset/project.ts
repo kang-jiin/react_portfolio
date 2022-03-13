@@ -1,7 +1,11 @@
-[
+import home_football from "assets/img/football/home.jpg";
+import home_kdkd from "assets/img/kdkd/kdkd_home.png";
+import home_4989 from "assets/img/sgpg/4989.PNG";
+
+const dataset = [
   {
     "title": "모두의 풋살",
-    "img": "assets/img/football/home.jpg",
+    "img": home_football,
     "contents": [
       {
         "career": "아주대의료원 의료정보학과 연구실 개발팀",
@@ -12,7 +16,7 @@
   },
   {
     "title": "키드키득",
-    "img": "assets/img/kdkd/kdkd_home.png",
+    "img": home_kdkd,
     "contents": [
       {
         "career": "삼양데이타시스템 SM팀 인턴",
@@ -23,7 +27,7 @@
   },
   {
     "title": "사구팔구",
-    "img": "assets/img/sgpg/4989.PNGg",
+    "img": home_4989,
     "contents": [
       {
         "career": "한국정보기술연구원 IoT 프로그래밍 과정 이수",
@@ -38,3 +42,5 @@
     ]
   }
 ]
+
+export default dataset;
