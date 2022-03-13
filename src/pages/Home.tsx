@@ -3,8 +3,9 @@ import React from 'react';
 import MyNavbar from 'components/MyNavbar';
 import Summary from 'components/Summary';
 import AboutMe from 'components/AboutMe';
-import Skills from 'components/Skills';
+import Skill from 'components/Skill';
 import Career from 'components/Career';
+import Project from 'components/Project';
 
 const Home = () => {
   return (
@@ -12,8 +13,9 @@ const Home = () => {
       <MyNavbar />
       <Summary />
       <AboutMe />
-      <Skills />
+      <Skill />
       <Career />
+      <Project />
     </div>
   );
 };

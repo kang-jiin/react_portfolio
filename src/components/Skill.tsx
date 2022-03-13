@@ -6,7 +6,7 @@ const componentStyle: CSSProperties = {
   height: '500px'
 };
 
-const Skills = () => {
+const Skill = () => {
   const [mix, setMix] = useState(Math.random() * 100);
 
   // useEffect(() => {
@@ -54,10 +54,10 @@ const Skills = () => {
     { text: 'IntelliJ', value: 70 }
   ];
   return (
-    <Container style={componentStyle} className="" id="skills">
+    <Container style={componentStyle} className="" id="skill">
       <ReactWordcloud options={options} words={words} />
     </Container>
   );
 };
 
-export default React.memo(Skills);
+export default React.memo(Skill);
