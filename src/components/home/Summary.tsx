@@ -1,5 +1,6 @@
 import React, { CSSProperties, useEffect, useState } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
+import KSection from 'components/common/KSection';
 
 const Summary = () => {
   const [time, setTime] = useState<number>(0);
@@ -25,16 +26,12 @@ const Summary = () => {
     return () => clearTimeout(timer);
   }, [time]);
 
-  const containerStyle: CSSProperties = {
-    height: '100vh'
-  };
-
   const textStyle: CSSProperties = {
     height: '100px'
   };
 
   return (
-    <Container style={containerStyle} id="summary">
+    <KSection id="summary">
       <div className="text-center d-flex h-50 w-100">
         <Row className="justify-content-center align-self-center w-100">
           <div style={textStyle}>
@@ -58,7 +55,7 @@ const Summary = () => {
           <h5>https://jane-aeiou.tistory.com</h5>
         </Col>
       </Row>
-    </Container>
+    </KSection>
   );
 };
 

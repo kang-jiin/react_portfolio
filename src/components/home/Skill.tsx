@@ -1,5 +1,5 @@
 import React, { CSSProperties, useEffect, useState } from 'react';
-import { Container } from 'react-bootstrap';
+import KSection from 'components/common/KSection';
 import ReactWordcloud from 'react-wordcloud';
 
 const componentStyle: CSSProperties = {
@@ -54,9 +54,9 @@ const Skill = () => {
     { text: 'IntelliJ', value: 70 }
   ];
   return (
-    <Container style={componentStyle} className="" id="skill">
+    <KSection id="skill" title="SKILL">
       <ReactWordcloud options={options} words={words} />
-    </Container>
+    </KSection>
   );
 };
 
