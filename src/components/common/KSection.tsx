@@ -10,7 +10,7 @@ type KSectionProps = {
 
 const KSection = ({ ...prop }: KSectionProps) => {
   const bgColor = prop.bgColor ? `bg-${prop.bgColor}` : '';
-  
+
   return (
     <section id={prop.id} className={`page-section ${bgColor}`}>
       <Container className="h-100">
