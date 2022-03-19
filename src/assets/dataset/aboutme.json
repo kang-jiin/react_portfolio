@@ -1,0 +1,53 @@
+[
+  [
+    {
+      "id": 1,
+      "title": "👶주니어 웹 개발자",
+      "contents": "React, Node.js, MySQL, AWS 를 이용한 웹 서비스를 설계/개발/운영한 경험이 있어요",
+      "sm_size": 12,
+      "md_size": 10,
+      "lg_size": 8,
+      "className": "mx-auto"
+    }
+  ],
+  [
+    {
+      "id": 2,
+      "title": "🕐계획적인 개발",
+      "contents": "늘 개발 일정을 계획하고 사이드 이펙트를 고려해 기능을 설계하는 등 빠른 개발 보다는 계획적인 개발을 좋아해요",
+      "sm_size": 6,
+      "md_size": 5,
+      "lg_size": 4,
+      "className": "ms-auto"
+    },
+    {
+      "id": 3,
+      "title": "💻통일된 코드",
+      "contents": "팀의 코딩 스타일 규칙을 정하고 리팩토링을 진행한 경험이 있어요",
+      "sm_size": 6,
+      "md_size": 5,
+      "lg_size": 4,
+      "className": "me-auto"
+    }
+  ],
+  [
+    {
+      "id": 4,
+      "title": "👍맞춰가는 동료",
+      "contents": "정형화된 규칙이 없더라도 팀원들의 코드를 분석해 코딩 스타일을 맞추기 위해 노력해요",
+      "sm_size": 6,
+      "md_size": 5,
+      "lg_size": 4,
+      "className": "ms-auto"
+    },
+    {
+      "id": 5,
+      "title": "📈함께 성장하는 동료",
+      "contents": "함께 공부하고 토이프로젝트 하는 것을 좋아해요 꾸준히 성장하는 개발자가 되고 싶어요",
+      "sm_size": 6,
+      "md_size": 5,
+      "lg_size": 4,
+      "className": "me-auto"
+    }
+  ]
+]
