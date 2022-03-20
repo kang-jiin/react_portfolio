@@ -18,21 +18,21 @@ const Career = () => {
       {dataset.map((data) => {
         return (
           <Row className="m-4 align-items-center" key={data.year}>
-            <Col md="2" style={textHeaderStyle} className="h4 ms-auto">
-              {data.year}
+            <Col md="1" style={textHeaderStyle} className="ms-auto">
+              <h2>{data.year}</h2>
             </Col>
-            <Col md="6" style={textBodyStyle} className="my-2 me-auto">
+            <Col md="7" style={textBodyStyle} className="my-2 me-auto">
               {data.contents.map((content, index) => {
                 return (
                   // eslint-disable-next-line react/no-array-index-key
-                  <div className="my-4" key={index}>
+                  <h5 className="my-4" key={index}>
                     {content.career} ({content.period})
                     {content.new === true && (
-                      <Badge color="success" pill className="ml-2">
+                      <Badge color="success" pill className="ms-2">
                         NEW
                       </Badge>
                     )}
-                  </div>
+                  </h5>
                 );
               })}
             </Col>
