@@ -1,11 +1,8 @@
-import home_football from "assets/img/football/home.jpg";
-import home_kdkd from "assets/img/kdkd/kdkd_home.png";
-import home_4989 from "assets/img/sgpg/4989.PNG";
-
-const dataset = [
+[
   {
     "title": "모두의 풋살",
-    "img": home_football,
+    "img_title": "home_football",
+    "img_path": "football/home.jpg",
     "contents": [
       {
         "career": "아주대의료원 의료정보학과 연구실 개발팀",
@@ -16,7 +13,8 @@ const dataset = [
   },
   {
     "title": "키드키득",
-    "img": home_kdkd,
+    "img_title": "home_kdkd",
+    "img_path": "kdkd/kdkd_home.png",
     "contents": [
       {
         "career": "삼양데이타시스템 SM팀 인턴",
@@ -27,7 +25,8 @@ const dataset = [
   },
   {
     "title": "사구팔구",
-    "img": home_4989,
+    "img_title": "home_4989",
+    "img_path": "sgpg/4989.PNG",
     "contents": [
       {
         "career": "한국정보기술연구원 IoT 프로그래밍 과정 이수",
@@ -42,5 +41,3 @@ const dataset = [
     ]
   }
 ]
-
-export default dataset;

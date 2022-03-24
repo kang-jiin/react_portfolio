@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
 import KSection from 'components/common/KSection';
 
-import dataset from 'assets/dataset/project';
+import dataset from 'assets/dataset/project.json';
 
 const Project = () => {
   return (
@@ -11,7 +11,10 @@ const Project = () => {
         {dataset.map((data, index) => (
           <Col>
             <Card>
-              <Card.Img variant="top" src={data.img} />
+              {/* <Card.Img variant="top" src={require("assets/img/" + data.img_path).default} /> */}
+              {/* <Card.Img variant="top" src={require(`${data.img_path}`).default} />
+              <Card.Img variant="top" src={`${data.img_path}`} /> */}
+              <Card.Img variant="top" src={data.img_path} />
               <Card.Body>
                 <Card.Title>{data.title}</Card.Title>
                 <Card.Text>
