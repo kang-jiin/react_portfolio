@@ -11,10 +11,7 @@ const Project = () => {
         {dataset.map((data, index) => (
           <Col>
             <Card>
-              {/* <Card.Img variant="top" src={require("assets/img/" + data.img_path).default} /> */}
-              {/* <Card.Img variant="top" src={require(`${data.img_path}`).default} />
-              <Card.Img variant="top" src={`${data.img_path}`} /> */}
-              <Card.Img variant="top" src={data.img_path} />
+              <Card.Img variant="top" src={require("assets/img/" + data.img_path).default} />
               <Card.Body>
                 <Card.Title>{data.title}</Card.Title>
                 <Card.Text>
