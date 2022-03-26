@@ -1,29 +1,49 @@
 import React from 'react';
-import { Card, Col, Row } from 'react-bootstrap';
+import { Badge, Card, Col, Row } from 'react-bootstrap';
 import KSection from 'components/common/KSection';
 
 import dataset from 'assets/dataset/project.json';
+import ProjectModal from 'components/home/ProjectModal';
 
 const Project = () => {
+  const [modalShow, setModalShow] = React.useState(false);
+  const [modalDataIndex, setModalDataIndex] = React.useState(0);
+
+  const onClickProject = (dindex: number) => {
+    setModalDataIndex(dindex);
+    setModalShow(true);
+  };
+
   return (
     <KSection id="project" title="PROJECT">
-      <Row xs={1} md={2} className="g-4">
-        {dataset.map((data, index) => (
-          <Col>
-            <Card>
-              <Card.Img variant="top" src={require("assets/img/" + data.img_path).default} />
+      <Row className="g-4">
+        {dataset.map((project, dindex) => (
+          <Col sm="12" md="6" lg="4" key={dindex}>
+            <Card onClick={() => onClickProject(dindex)}>
+              <Card.Img
+                style={{ aspectRatio: '3/2' }}
+                src={require('assets/img/' + project.img_path).default}
+              />
               <Card.Body>
-                <Card.Title>{data.title}</Card.Title>
+                <Card.Title>{project.title}</Card.Title>
                 <Card.Text>
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                  {project.skills.map((skill, sindex) => (
+                    <Badge bg="info" pill className="me-2" key={sindex}>
+                      {skill}
+                    </Badge>
+                  ))}
                 </Card.Text>
               </Card.Body>
             </Card>
           </Col>
         ))}
       </Row>
+
+      <ProjectModal
+        show={modalShow}
+        dataIndex={modalDataIndex}
+        onHide={() => setModalShow(false)}
+      />
     </KSection>
   );
 };
