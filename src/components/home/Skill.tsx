@@ -1,61 +1,33 @@
-import React, { CSSProperties, useEffect, useState } from 'react';
+import React from 'react';
 import KSection from 'components/common/KSection';
-import ReactWordcloud from 'react-wordcloud';
+import { Card, Col, Row } from 'react-bootstrap';
 
-const componentStyle: CSSProperties = {
-  height: '500px'
-};
+import dataset from 'assets/dataset/skill.json';
 
 const Skill = () => {
-  const [mix, setMix] = useState(Math.random() * 100);
+  console.log(dataset);
 
-  // useEffect(() => {
-  //   const skillTimer = setTimeout(() => {
-  //     setMix(Math.random() * 100);
-  //   }, 8000);
-
-  //   return () => clearTimeout(skillTimer);
-  // }, [mix]);
-
-  const options: any = {
-    fontFamily: 'impact',
-    fontSizes: [50, 100],
-    fontStyle: 'normal',
-    fontWeight: 'normal',
-    padding: 1
-  };
-  const words = [
-    { text: 'C', value: 10 },
-    { text: 'C++', value: 20 },
-    { text: 'JAVA', value: 30 },
-    { text: 'JavaScript', value: 100 },
-    { text: 'TypeScript', value: 70 },
-    { text: 'HTML', value: 70 },
-    { text: 'CSS', value: 50 },
-    { text: 'React', value: 100 },
-    { text: 'Node.js', value: 80 },
-    { text: 'Jquery', value: 30 },
-    { text: 'Spring', value: 40 },
-    { text: 'SpringBoot', value: 40 },
-    { text: 'SQL', value: 100 },
-    { text: 'Oracle', value: 90 },
-    { text: 'MySQL', value: 90 },
-    { text: 'AWS', value: 100 },
-    { text: 'EC2', value: 10 },
-    { text: 'S3', value: 10 },
-    { text: 'Lambda', value: 10 },
-    { text: 'SES', value: 10 },
-    { text: 'DynamoDB', value: 20 },
-    { text: 'Cognito', value: 10 },
-    { text: 'Git', value: 80 },
-    { text: 'GitHub', value: 80 },
-    { text: 'SourceTree', value: 70 },
-    { text: 'VisualCode', value: 80 },
-    { text: 'IntelliJ', value: 70 }
-  ];
   return (
     <KSection id="skill" title="SKILL">
-      <ReactWordcloud options={options} words={words} />
+      <Row className="g-4">
+        {dataset.map((skill, sindex) => (
+          <Col sm="12" md="6" lg="3" key={sindex}>
+            <h3 className="h4 text-success font-weight-bold mt-4">
+              {skill.category}
+            </h3>
+            {skill.contents.map((item, i) => (
+              <>
+                <Card.Title>{item.name}</Card.Title>
+                <Card style={{ width: '100px' }} key={i}>
+                  <Card.Img
+                    src={require('assets/img/' + item.img_path).default}
+                  />
+                </Card>
+              </>
+            ))}
+          </Col>
+        ))}
+      </Row>
     </KSection>
   );
 };

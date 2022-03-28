@@ -1,0 +1,90 @@
+[
+  {
+    "category": "Web",
+    "contents": [
+      {
+        "name": "HTML",
+        "img_path": "skills/html.png"
+      },
+      {
+        "name": "CSS",
+        "img_path": "skills/css.png"
+      },
+      {
+        "name": "Javascript",
+        "img_path": "skills/900px-JavaScript-logo.png"
+      },
+      {
+        "name": "React",
+        "img_path": "skills/900px-JavaScript-logo.png"
+      },
+      {
+        "name": "Node.js",
+        "img_path": "skills/icons8-nodejs-500.png"
+      }
+    ]
+  }, 
+  {
+    "category": "DB",
+    "contents": [
+      {
+        "name": "SQL",
+        "img_path": "skills/html.png"
+      },
+      {
+        "name": "Oracle",
+        "img_path": "skills/oracle.png"
+      },
+      {
+        "name": "MySQL",
+        "img_path": "skills/mysql.png"
+      }
+    ]
+  }, 
+  {
+    "category": "AWS",
+    "contents": [
+      {
+        "name": "S3",
+        "img_path": "skills/html.png"
+      },
+      {
+        "name": "EC2",
+        "img_path": "skills/oracle.png"
+      },
+      {
+        "name": "Lambda",
+        "img_path": "skills/mysql.png"
+      },
+      {
+        "name": "SES",
+        "img_path": "skills/oracle.png"
+      },
+      {
+        "name": "DynamoDB",
+        "img_path": "skills/mysql.png"
+      }
+    ]
+  }, 
+  {
+    "category": "Tool",
+    "contents": [
+      {
+        "name": "Visual Code",
+        "img_path": "skills/oracle.png"
+      },
+      {
+        "name": "IntelliJ",
+        "img_path": "skills/mysql.png"
+      },
+      {
+        "name": "Git",
+        "img_path": "skills/oracle.png"
+      },
+      {
+        "name": "Source Tree",
+        "img_path": "skills/mysql.png"
+      }
+    ]
+  }
+]
