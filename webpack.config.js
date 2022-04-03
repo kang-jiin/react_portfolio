@@ -53,7 +53,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(PNG|png|jpg|woff|woff2|eot|ttf|svg|gif|otf)$/,
+        test: /\.(PNG|png|jpg|jpeg|woff|woff2|eot|ttf|svg|gif|otf)$/,
         exclude: /node_modules/,
         loader: 'file-loader',
         options: {
