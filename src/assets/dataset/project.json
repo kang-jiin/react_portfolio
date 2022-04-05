@@ -1,7 +1,7 @@
 [
   {
     "title": "모두의 풋살",
-    "img_path": "football/home.jpg",
+    "img": "footballHome",
     "sub_title": ["풋살을 좋아하는 사람들을 위한 경기 매칭 서비스"],
     "period": "2020.05.14 ~ 2020.05.27",
     "member": "4",
@@ -25,7 +25,7 @@
   },
   {
     "title": "키드키득",
-    "img_path": "kdkd/kdkd_home.png",
+    "img": "kdkdHome",
     "sub_title": [
       "아이(kid)를 웃게 하는(키득)",
       "유치원 자동 등하원 관리 시스템"
@@ -53,7 +53,7 @@
   },
   {
     "title": "사구팔구",
-    "img_path": "sgpg/4989.PNG",
+    "img": "sgpgHome",
     "sub_title": [
       "경매 중고 거래 사이트",
       "판매자는 시작 금액과 최고 금액을 설정",
