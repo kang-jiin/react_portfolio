@@ -3,6 +3,7 @@ import { Badge, Card, Col, Row } from 'react-bootstrap';
 import KSection from 'components/common/KSection';
 
 import dataset from 'assets/dataset/project.json';
+import images from 'assets/img/images';
 import ProjectModal from 'components/home/ProjectModal';
 
 const Project = () => {
@@ -17,18 +18,18 @@ const Project = () => {
   return (
     <KSection id="project" title="PROJECT">
       <Row className="g-4">
-        {dataset.map((project, dindex) => (
-          <Col sm="12" md="6" lg="4" key={dindex}>
-            <Card onClick={() => onClickProject(dindex)}>
+        {dataset.map((project, i) => (
+          <Col sm="12" md="6" lg="4" key={project.title}>
+            <Card onClick={() => onClickProject(i)}>
               <Card.Img
                 style={{ aspectRatio: '3/2' }}
-                src={require('assets/img/' + project.img_path).default}
+                src={images[project.img]}
               />
               <Card.Body>
                 <Card.Title>{project.title}</Card.Title>
                 <Card.Text>
-                  {project.skills.map((skill, sindex) => (
-                    <Badge bg="info" pill className="me-2" key={sindex}>
+                  {project.skills.map((skill) => (
+                    <Badge bg="info" pill className="me-2" key={skill}>
                       {skill}
                     </Badge>
                   ))}
