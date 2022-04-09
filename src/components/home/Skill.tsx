@@ -5,13 +5,11 @@ import { Card, Col, Row } from 'react-bootstrap';
 import dataset from 'assets/dataset/skill.json';
 
 const Skill = () => {
-  console.log(dataset);
-
   return (
     <KSection id="skill" title="SKILL">
       <Row className="g-4">
         {dataset.map((skill, sindex) => (
-          <Col sm="12" md="6" lg="3" key={sindex}>
+          <Col xs="6" sm="6" md="3" key={sindex}>
             <h3 className="h4 text-success font-weight-bold mt-4">
               {skill.category}
             </h3>

@@ -2,12 +2,6 @@
     padding: 6rem 0;
     height: 100%;
 }
-@media (min-height: 100vh) {
-    .page-section {
-        padding: 6rem 0;
-        height: 100vh;
-    }
-}
 .page-section .page-section-heading {
     font-size: 2.25rem;
     line-height: 2rem;
