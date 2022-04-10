@@ -4,23 +4,23 @@
     "contents": [
       {
         "name": "HTML",
-        "img_path": "skills/html.png"
+        "img": "htmlLogo"
       },
       {
         "name": "CSS",
-        "img_path": "skills/css.png"
+        "img": "cssLogo"
       },
       {
         "name": "Javascript",
-        "img_path": "skills/900px-JavaScript-logo.png"
+        "img": "javascriptLogo"
       },
       {
         "name": "React",
-        "img_path": "skills/react.png"
+        "img": "reactLogo"
       },
       {
         "name": "Node.js",
-        "img_path": "skills/icons8-nodejs-500.png"
+        "img": "nodejsLogo"
       }
     ]
   }, 
@@ -29,11 +29,11 @@
     "contents": [
       {
         "name": "Oracle",
-        "img_path": "skills/oracle.png"
+        "img": "oracleLogo"
       },
       {
         "name": "MySQL",
-        "img_path": "skills/mysql.png"
+        "img": "mysqlLogo"
       }
     ]
   }, 
@@ -42,23 +42,23 @@
     "contents": [
       {
         "name": "S3",
-        "img_path": "skills/s3.png"
+        "img": "s3Logo"
       },
       {
         "name": "EC2",
-        "img_path": "skills/ec2.png"
+        "img": "ec2Logo"
       },
       {
         "name": "Lambda",
-        "img_path": "skills/lambda.png"
+        "img": "lambdaLogo"
       },
       {
         "name": "SES",
-        "img_path": "skills/ses.png"
+        "img": "sesLogo"
       },
       {
         "name": "DynamoDB",
-        "img_path": "skills/dynamoDB.png"
+        "img": "dynamoDBLogo"
       }
     ]
   }, 
@@ -67,19 +67,19 @@
     "contents": [
       {
         "name": "Visual Code",
-        "img_path": "skills/vscode.png"
+        "img": "vscodeLogo"
       },
       {
         "name": "IntelliJ",
-        "img_path": "skills/intellij.jpeg"
+        "img": "intellij"
       },
       {
         "name": "Git",
-        "img_path": "skills/git.png"
+        "img": "gitLogo"
       },
       {
         "name": "Source Tree",
-        "img_path": "skills/sourcetree.png"
+        "img": "sourcetreeLogo"
       }
     ]
   }
