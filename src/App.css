@@ -14,3 +14,12 @@
         margin-bottom: 2.5rem;
     }
 }
+
+.text-header {
+    --bs-text-opacity: 1;
+    color: #000000;
+}
+.text-contents {
+    --bs-text-opacity: 1;
+    color: #6c757d;
+}
