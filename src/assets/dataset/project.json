@@ -1,5 +1,60 @@
 [
   {
+    "title": "RT-ROD",
+    "img": "rtrodHome",
+    "sub_title": [
+      "의료데이터 분석을 위한",
+      "공동 연구 프로젝트 관리 시스템"
+    ],
+    "period": "2021.01 ~ 2022.04",
+    "member": "2",
+    "skills": ["아주대", "React", "Express", "MySQL", "AWS"],
+    "role": [
+      "전체 프로그램 기능 설계",
+      "Front-End 및 Back-End 개발",
+      "MySQL Database 설계",
+      "기능 분석 및 UI/UX 기획"
+    ],
+    "summary": [
+      "의료 CDM DB, 분석 도구 연결",
+      "날짜별, DB별, 도구별 분석 통계",
+      "Atomic Design을 적용한 화면 구성",
+      "React를 이용한 SPA 개발",
+      "Mobx를 이용한 상태 관리",
+      "Express.js 기반 Rest API 개발",
+      "Webpack 및 Babel 적용",
+      "배치 프로그램 개발"      
+    ]
+  },
+  {
+    "title": "삼양 ITSM",
+    "img": "samyangHome",
+    "sub_title": [
+      "삼양 그룹의 IT Service의",
+      "수정 요청/사유, 변경 내역을 관리하는 시스템"
+    ],
+    "period": "2020.07 ~ 2020.10",
+    "member": "5",
+    "skills": ["삼양", "React", "SpringBoot", "MSSQL", "인턴"],
+    "role": [
+      "Front-End 및 Back-End 개발",
+      "서비스 요청 조회 기능 개발",
+      "실적 관리 기능 개발",
+      "MSSQL Database 추가 설계"
+    ],
+    "summary": [
+      "삼양그룹 IT Service Management",
+      "IT 서비스의 수정 요청/사유",
+      "변경 내역 등을 관리",
+      "담당자별 요청/완료 통계 화면",
+      "React를 이용한 SPA 개발",
+      "Mobx를 이용한 상태 관리",
+      "SpringBoot 기반 Rest API 개발",
+      "MVC패턴을 적용한 웹 서버",
+      "삼양데이타시스템 인턴으로 참여"
+    ]
+  },
+  {
     "title": "모두의 풋살",
     "img": "footballHome",
     "sub_title": ["풋살을 좋아하는 사람들을 위한 경기 매칭 서비스"],

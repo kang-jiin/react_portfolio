@@ -15,6 +15,10 @@ import intellij from 'assets/img/skills/intellij.png';
 import gitLogo from 'assets/img/skills/git.png';
 import sourcetreeLogo from 'assets/img/skills/sourcetree.png';
 
+import rtrodHome from 'assets/img/rtrod/login.png';
+
+import samyangHome from 'assets/img/samyang/home.png';
+
 import footballHome from 'assets/img/football/home.jpg';
 
 import kdkdHome from 'assets/img/kdkd/kdkd_home.png';
@@ -43,6 +47,8 @@ const images: typeImages = {
   gitLogo,
   sourcetreeLogo,
 
+  rtrodHome,
+  samyangHome,
   footballHome,
   kdkdHome,
   sgpgHome
