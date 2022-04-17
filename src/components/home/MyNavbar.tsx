@@ -15,7 +15,6 @@ const MyNavbar = () => {
               <Nav.Link href="#skill">Skill</Nav.Link>
               <Nav.Link href="#career">Career</Nav.Link>
               <Nav.Link href="#project">Project</Nav.Link>
-              <Nav.Link href="#connect">Connect</Nav.Link>
             </Nav>
             <Nav>
               <Button
