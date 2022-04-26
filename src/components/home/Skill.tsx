@@ -11,12 +11,12 @@ const Skill = () => {
       <Row className="g-4">
         {dataset.map((skill) => (
           <Col xs="6" sm="6" md="3" key={skill.category}>
-            <h3 className="h4 text-success font-weight-bold mt-4">
+            <div className="h3 text-success font-weight-bold py-2">
               {skill.category}
-            </h3>
+            </div>
             {skill.contents.map((item) => (
               <>
-                <Card.Title>{item.name}</Card.Title>
+                <Card.Title className="pt-3">{item.name}</Card.Title>
                 <Card style={{ width: '100px' }} key={item.name}>
                   <Card.Img src={images[item.img]} />
                 </Card>

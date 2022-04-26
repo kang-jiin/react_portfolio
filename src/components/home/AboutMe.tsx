@@ -12,8 +12,8 @@ const AboutMe = () => {
           {row.all
             ? row.detail.map((data) => (
                 <Col md="10" lg="8" className="p-4 mx-auto" key={data.id}>
-                  <h2 className="text-header">{data.title}</h2>
-                  <h5 className="text-contents">{data.contents}</h5>
+                  <div className="h2 text-header">{data.title}</div>
+                  <div className="h5 text-contents">{data.contents}</div>
                 </Col>
               ))
             : row.detail.map((data, i) => (
@@ -23,8 +23,8 @@ const AboutMe = () => {
                   className={i % 2 === 0 ? 'p-4 ms-auto' : 'p-4 me-auto'}
                   key={data.id}
                 >
-                  <h2 className="text-header">{data.title}</h2>
-                  <h5 className="text-contents">{data.contents}</h5>
+                  <div className="h2 text-header">{data.title}</div>
+                  <div className="h5 text-contents">{data.contents}</div>
                 </Col>
               ))}
         </Row>

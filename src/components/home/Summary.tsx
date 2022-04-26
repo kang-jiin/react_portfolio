@@ -27,7 +27,7 @@ const Summary = () => {
   }, [time]);
 
   const textStyle: CSSProperties = {
-    height: '100px'
+    height: '150px'
   };
 
   return (
@@ -35,24 +35,24 @@ const Summary = () => {
       <div className="text-center d-flex w-100 py-5">
         <Row className="justify-content-center align-self-center w-100">
           <div style={textStyle}>
-            <h1>{text1}</h1>
-            <h1>{text2}</h1>
+            <div className="display-4">{text1}</div>
+            <div className="display-4">{text2}</div>
           </div>
           <Row className="mt-4">
-            <h4>Javascript | React | Typescript</h4>
+            <div className="h2">Javascript | React | Typescript</div>
           </Row>
         </Row>
       </div>
       <Row className="d-flex py-5 mt-5">
         <Col sm="12" md="6" className="align-self-center">
-          <h5>😀안정적인 서비스를 만들고 싶어요.</h5>
-          <h5>😀꾸준히 성장하는 개발자가 되고 싶어요.</h5>
-          <h5>😀열정적인 동료와 함께하고 싶어요.</h5>
+          <div className="h4">😀안정적인 서비스를 만들고 싶어요.</div>
+          <div className="h4">😀꾸준히 성장하는 개발자가 되고 싶어요.</div>
+          <div className="h4">😀열정적인 동료와 함께하고 싶어요.</div>
         </Col>
         <Col sm="12" md="6" className="align-self-center text-end">
-          <h5>kangjiin94@gmail.com</h5>
-          <h5>https://github.com/kang-jiin</h5>
-          <h5>https://jane-aeiou.tistory.com</h5>
+          <div className="h4">kangjiin94@gmail.com</div>
+          <div className="h4">https://github.com/kang-jiin</div>
+          <div className="h4">https://jane-aeiou.tistory.com</div>
         </Col>
       </Row>
     </KSection>
