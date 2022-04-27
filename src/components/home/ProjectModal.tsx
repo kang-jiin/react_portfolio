@@ -28,7 +28,11 @@ const ProjectModal = ({ dataIndex, show, onHide }: ProjectModalProps) => {
       </Modal.Header>
       <Modal.Body>
         {data.sub_title.map((v) => {
-          return <h4 key={v}>{v}</h4>;
+          return (
+            <div className="h5" key={v}>
+              {v}
+            </div>
+          );
         })}
         <Row>
           <Col sm="12" md="6">
@@ -40,7 +44,11 @@ const ProjectModal = ({ dataIndex, show, onHide }: ProjectModalProps) => {
           </Col>
           <Col md="12" lg="6">
             {data.summary.map((v) => {
-              return <h5 key={v}>{v}</h5>;
+              return (
+                <div className="h5" key={v}>
+                  {v}
+                </div>
+              );
             })}
           </Col>
         </Row>
